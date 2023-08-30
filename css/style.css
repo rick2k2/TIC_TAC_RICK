@@ -347,3 +347,12 @@ body{
     animation: bubble-blast 1s ease-out forwards;
   }
     
+
+
+  #human_comp_bg{
+    background: linear-gradient(to right bottom,coral,white);
+  }
+
+  #human_human_bg{
+    background: linear-gradient(to top left,rgba(237, 12, 237, 0.533),white);
+  }
