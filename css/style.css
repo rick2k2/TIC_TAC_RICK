@@ -18,7 +18,7 @@ body{
     background: linear-gradient(to bottom right,rgb(253, 139, 97),#d8d6d6);
 }
 .homeContainer h1{
-    font-size: 4vmax;
+    font-size: 3vmax;
 }
 .special_text{
     color: crimson;
