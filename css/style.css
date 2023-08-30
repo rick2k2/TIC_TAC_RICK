@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+/* home style */
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    background: linear-gradient(to bottom right,rgb(253, 139, 97),#d8d6d6);
+}
+.homeContainer h1{
+    font-size: 4vmax;
+}
+.special_text{
+    color: crimson;
+    text-transform: capitalize;
+}
+.homeContainer p{
+    font-size: 2.5vmax;
+    color: #474646;
+}
+.homeContainer a{
+    text-decoration: none;
+    color: #fff;
+    background: crimson;
+    padding: 18px 60px;
+    font-size: 3vmax;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    transition: 0.8s ease-in-out;
+    box-shadow: 5px 8px 30px #fff;
+    border-radius: 8px;
+}
+.homeContainer a:hover{
+    color: #000;
+    border: 1px solid #000;
+    background: transparent;
+
+}
+
+
+
+/* menu style */
+
+.menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 40px;
+    background: linear-gradient(to bottom right,rgb(253, 139, 97),#d8d6d6);
+}
+.menu_container h2{
+    color: #323131;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.menu a{
+    color: #fff;
+    background: linear-gradient(to right bottom,coral,rgba(0, 0, 128, 0.533));
+    font-size: 2.5vmax;
+    padding: 20px 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 5px 8px 30px #fff;
+}
+.menu a:hover{
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+.back_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back_btn a{
+    text-decoration: none;
+    color: #fff;
+    background: navy;
+    padding: 20px 50px;
+    font-size: 2vmax;
+    border-radius: 10px;
+    transition:  0.8s ease-in-out;
+    box-shadow: 5px 8px 30px #fff;
+}
+.back_btn a:hover{
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+.menu_outline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:40px;
+    background: transparent;
+    box-shadow: 5px 8px 30px #ffffff46;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+
+
+/* puck style */
+.puck_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    background: linear-gradient(to bottom right,rgb(253, 139, 97),#d8d6d6);
+}
+.puck_container p{
+    font-size: 3vmax;
+    color: rgb(68, 67, 67);
+}
+.puck_container a{
+    font-size: 2.5vmax;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: linear-gradient(to left bottom,crimson,black) ;
+    padding: 20px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#zero:after{
+    content: '0';
+}
+#cross_id:after{
+    content: 'x';
+    transform: rotate(90deg);
+}
+#zero:hover{
+    color: crimson;
+    background: transparent;
+    border: 1px solid crimson;
+}
+#cross_id:hover{
+    color: blue;
+    background: transparent;
+    border: 1px solid blue;
+} 
+
+
+
+/* human vs human style */
+.human_vs_human_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.header_text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:3vmax;
+    gap: 10;
+    padding: 30px;
+    background: rgb(105, 159, 235);
+    width: 100%;
+}   
+.header_text p{
+    color: #fff;
+}
+
+#gameboard{
+    background: rgba(211, 119, 44, 0.753);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    width: 410px;
+    height: 420px;
+    margin: 18px;
+    box-shadow: 5px 8px 30px rgb(3, 3, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+#info{
+    padding: 40px;
+    background: rgb(105, 159, 235);
+    font-size: 1.5vmax;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.btn_human_human{
+    padding:20px 60px;
+    text-decoration: none;
+    font-size: 1.5vmax;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 8px 30px skyblue;
+    border: 1px solid transparent;
+    transition: 0.8s ease-in-out;
+}
+.btn_human_human:hover{
+    border: 1px solid #333;
+    background: transparent;
+    color: #333;
+}
+
+
+/* human vs computer */
+.human_vs_computer_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 58px;
+}
+#gameboard2{
+    background: rgba(235, 120, 26, 0.892);
+    border-radius: 20px;
+    border: 1px solid #333;
+    width: 400px;
+    height: 400px;
+    margin: 18px;
+    box-shadow: 5px 8px 30px skyblue;
+}
+
+
+
+
+/* some important element style which is created in js*/
+.inner_box{
+    border: 1px solid #ffffff;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 20px rgba(0, 0, 128, 0.39);
+    cursor: pointer;
+}
+.cicle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+.circle:after{
+    content: "0";
+    color: crimson;
+    font-size: 6vmax;
+}
+.cross{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.cross:after{
+    content: "x";
+    transform: rotate(90deg);
+    color: blue;
+    font-size: 6vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode_value_puck2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 150px;
+}
+.mode_value_puck2 p{
+    background: rgba(220, 209, 209, 0.293);
+    padding: 20px 60px;
+    box-shadow: 5px 8px 30px navy;
+    border-radius: 10%;
+    margin-left: -50px;
+    font-size: 2vmax;
+}
+.winning-box {
+    border: 2px solid red;
+    background: rgba(172, 255, 47, 0.779);
+}
+
+
+/* celebration animation */
+.celebration {
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    animation: bubble-blast 1s ease-out forwards;
+  }
+  
+  @keyframes bubble-blast {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  .celebration-active {
+    animation: bubble-blast 1s ease-out forwards;
+  }
+    
